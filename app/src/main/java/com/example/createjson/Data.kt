@@ -1,5 +1,13 @@
 package com.example.createjson
 
+data class Flag(
+    val flagName: String,
+    val defaultValue: Boolean
+)
+data class Country(
+    val countryName: String,
+    val flags: Flag
+)
 enum class Flags(
     val flagName: String,
     val defaultValue: Boolean
@@ -22,19 +30,13 @@ enum class Flags(
     IS_DRSA_ENABLED("isDrsaEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
     IS_ZONAL_UNLOCK_ENABLED("isZonalUnlockEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
     IS_GUARD_MODE_ENABLED("isGuardModeEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
-    IS_OSB_PHONE_NUMBER_ENABLED(
-        "isOsbPhoneNumberEnabled",
-        false
-    ),//, buildConfigWrapper.isBuildTypeDebug),
+    IS_OSB_PHONE_NUMBER_ENABLED("isOsbPhoneNumberEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
     IS_AAR_ENABLED("isAarEnabled", false),
     IS_DEALER_DETAILS_V2_ENABLED("isDealerDetailsV2Enabled", true),
     SHOW_ADDRESS_LINE_TWO("showAddressLineTwo", true),
     SHOW_STATE_OR_COUNTY("showStateOrCounty", true),
     OPEN_EMAIL_FOR_CONTACT_GUIDE("openEmailForContactGuide", false),
-    SHOULD_HIDE_CONTACT_GUIDE_IN_FORGOT_AND_RESET_PASSWORD(
-        "shouldHideContactGuideInForgotAndResetPassword",
-        false
-    ),
+    SHOULD_HIDE_CONTACT_GUIDE_IN_FORGOT_AND_RESET_PASSWORD("shouldHideContactGuideInForgotAndResetPassword", false),
     IS_STATE_REQUIRED("isStateRequired", true),
     IS_OSB_ENABLED("isOsbEnabled", false),
     IS_MAINTENANCE_SCHEDULE_ENABLED("isMaintenanceScheduleEnabled", false),

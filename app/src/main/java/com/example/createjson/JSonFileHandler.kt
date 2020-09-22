@@ -8,6 +8,7 @@ import java.io.*
 class JSonFileHandler {
     object JSonFileUtil {
         fun readFile(context: Context, fileName: String): String? {
+            var result=""
             try {
                 val inputStream: InputStream? =
                     javaClass.getResourceAsStream(fileName)
@@ -16,14 +17,24 @@ class JSonFileHandler {
                     BufferedReader(InputStreamReader(inputStream))
                 val builder = StringBuilder()
                 var line: String?
+//                var penultimateLine: String?=""
+//                var penultimate_1: String?=""
+//                var penultimate_2: String?=""
                 while (bufferedReader.readLine().also { line = it } != null) {
-                    builder.append(line)
+                    while (bufferedReader.readLine().also { line = it } != "}") {
+
+                        if (line !="{")builder.append(line)
+//                    penultimate_2=penultimate_1
+//                    penultimate_1=penultimateLine
+//                    penultimateLine=line
+                    }
                 }
-                return builder.toString()
+                result=builder.toString()
+//                return builder.toString()
             } catch (e: IOException) {
                 e.printStackTrace()
             }
-            return ""
+            return result
         }
 
 

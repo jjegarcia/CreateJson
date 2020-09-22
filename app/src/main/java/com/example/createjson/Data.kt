@@ -27,10 +27,8 @@ enum class Flags(
     IS_CHANGE_EMAIL_ENABLED("isChangeEmailEnabled", true),
     IS_FLEET_HEALTH_ENABLED("isFleetHealthEnabled", true),
     ARE_OILLIFE_PROGNOSTICS_ENABLED("areOilLifePrognosticsEnabled", false),
-    IS_DRSA_ENABLED("isDrsaEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
-    IS_ZONAL_UNLOCK_ENABLED("isZonalUnlockEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
-    IS_GUARD_MODE_ENABLED("isGuardModeEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
-    IS_OSB_PHONE_NUMBER_ENABLED("isOsbPhoneNumberEnabled", false),//, buildConfigWrapper.isBuildTypeDebug),
+    IS_DRSA_ENABLED("isDrsaEnabled", false),
+    IS_ZONAL_UNLOCK_ENABLED("isZonalUnlockEnabled", false),
     IS_AAR_ENABLED("isAarEnabled", false),
     IS_DEALER_DETAILS_V2_ENABLED("isDealerDetailsV2Enabled", true),
     SHOW_ADDRESS_LINE_TWO("showAddressLineTwo", true),
@@ -47,9 +45,10 @@ enum class Flags(
     SHOULD_SHOW_MESSAGE_CENTER_MESSAGE_BODY("shouldShowMessageCenterMessageBody", false),
     SHOW_FORD_CREDIT_CONFIRMATION_DIALOG("showFordCreditConfirmationDialog", false),
     IS_TYRE_PRESSURE_HEALTH_DETAILS_ENABLED("isTyrePressureHealthDetailsEnabled", true),
-    IS_COVID19_INFO_ENABLED("isCOVID19InfoEnabled", false), //getCOVID19InfoUrl.isNotBlank),
+    IS_COVID19_INFO_ENABLED("isCOVID19InfoEnabled", false),
     IS_CV_SERVICES_FOR_MARKET_PLACE_ENABLED("isCVServicesForMarketPlaceEnabled", false),
 }
+//35 fields
 
 enum class Countries(countryName: String) {
     AUSTRIA("Austria"),
@@ -74,3 +73,4 @@ enum class Countries(countryName: String) {
     SWITZERLAND("Switzerland"),
     UNITEDKINGDOM("UnitedKingdom"),
 }
+//21 fields

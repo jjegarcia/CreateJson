@@ -114,6 +114,6 @@
     "showFordCreditConfirmationDialog": false,
     "isTyrePressureHealthDetailsEnabled": true,
     "isCOVID19InfoEnabled": false,
-    "isCVServicesForMarketPlaceEnabled": false
+    "isCVServicesForMarketPlaceEnabled": true
   }
 }

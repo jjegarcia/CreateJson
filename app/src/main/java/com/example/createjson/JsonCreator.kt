@@ -5,6 +5,7 @@ import org.json.JSONObject
 class JsonCreator {
     fun getJSonFile(): JSONObject {
         val flags = Flags.values()
+        val test=flags.size
         val countries: Array<Countries> = Countries.values()
         val countryJSonObject = getCountryJSonObject(countries,flags)
         return countryJSonObject

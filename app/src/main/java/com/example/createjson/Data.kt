@@ -4,10 +4,61 @@ data class Flag(
     val flagName: String,
     val defaultValue: Boolean
 )
+
 data class Country(
     val countryName: String,
     val flags: Flag
 )
+
+data class CountryList(
+    val countryData: List<CountryData>
+)
+
+data class countriesJson(
+    val countryData: List<CountryData>
+)
+
+data class CountryData(
+    val CountyName: String,
+    val areOilLifePrognosticsEnabled: Boolean,
+    val isAarEnabled: Boolean,
+    val isAddressLineOneRequired: Boolean,
+    val isAddressLineTwoRequired: Boolean,
+    val isAdvertisingIdAnalyticsEnabled: Boolean,
+    val isCOVID19InfoEnabled: Boolean,
+    val isCVServicesForMarketPlaceEnabled: Boolean,
+    val isChangeEmailEnabled: Boolean,
+    val isChargingStationSearchEnabled: Boolean,
+    val isCityRequired: Boolean,
+    val isDealerDetailsV2Enabled: Boolean,
+    val isDrsaEnabled: Boolean,
+    val isFb4Enabled: Boolean,
+    val isFleetHealthEnabled: Boolean,
+    val isGuardModeEnabled: Boolean,
+    val isHomeScreenCoachMarksEnabled: Boolean,
+    val isLockStatusEnabled: Boolean,
+    val isMaintenanceScheduleEnabled: Boolean,
+    val isOsbEnabled: Boolean,
+    val isOsbPhoneNumberEnabled: Boolean,
+    val isPostalCodeIncluded: Boolean,
+    val isPostcodeRequired: Boolean,
+    val isPreferredDealerEnabled: Boolean,
+    val isSmartLinkEnabled: Boolean,
+    val isStateRequired: Boolean,
+    val isSyncGenerationV2Enable: Boolean,
+    val isTyrePressureHealthDetailsEnabled: Boolean,
+    val isWiFiHotspotEnabled: Boolean,
+    val isZonalUnlockEnabled: Boolean,
+    val openEmailForContactGuide: Boolean,
+    val shouldHideContactGuideInForgotAndResetPassword: Boolean,
+    val shouldShowMessageCenterMessageBody: Boolean,
+    val showAddressLineTwo: Boolean,
+    val showCityOrTown: Boolean,
+    val showFordCreditConfirmationDialog: Boolean,
+    val showStateOrCounty: Boolean,
+    val showSuffix: Boolean
+)
+
 enum class Flags(
     val flagName: String,
     val defaultValue: Boolean
